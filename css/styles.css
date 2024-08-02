@@ -50,11 +50,11 @@ body::after {
     content: '';
     position: absolute;
     bottom: 0;
-    right: -50%;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 50%;
     background-color: var(--lightGrisVioleta);
-    border-radius: 50% 50% 0 0;
+    border-radius: 50% 0 0 0;
     z-index: -1;
 }
 @media (min-width: 768px) {
@@ -63,20 +63,21 @@ body::after {
         left: -15rem;
     }
     body::after {
+        border-radius: 50% 50% 0 0;
         width: 50%;
-        right: -15rem;
+        right: -10rem;
     }
 }
 @media (min-width: 1440px) {
     body::before {
         width: 40%;
-        height: 80%;
+        height: 85%;
         left: -15rem;
     }
     body::after {
         width: 40%;
-        height: 80%;
-        right: -25rem;
+        height: 85%;
+        right: -30rem;
     }
 }
 img {
@@ -184,7 +185,7 @@ p {
 }
 .chat__texto--morado {
     color: var(--violetaM);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .chat__derecha {
     display: flex;
@@ -225,7 +226,7 @@ p {
 }
 .chat__texto--blanco {
     color: var(--violetaDesaturadoOscuro);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .chat__cuadro--rbutton {
     width: 80%;
@@ -256,7 +257,7 @@ p {
     opacity: .6;
 }
 .tiempo__texto {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--blanco);
     opacity: .7;
 }
